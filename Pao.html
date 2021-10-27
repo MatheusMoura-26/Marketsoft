@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pao</title>
+    <link rel="stylesheet" href="css/pao.css">
+    <link rel="shortcut icon" href="Imagens/icons8-pão-48.png" type="image/x-icon">
+</head>
+<body>
+    <nav id="menu">
+        <ul class="ul">
+            
+            <li>
+                <h1 id="h">Marketsoft</h1>
+            </li>
+
+            <li>
+                <a href="Main.html">Home</a>
+            </li>
+            <li>
+                <a href="QuemSomos.html">Sobre</a>
+            </li>
+            <li>
+                <a href="">Contato</a>
+            </li>
+
+            <li>
+                <a href="Main.html">Produtos</a>
+            </li>
+
+            <li>
+                <a
+                    href="Cadastro.html">Cadastre-se</a>
+            </li>
+
+            <li>
+                <a
+                    href="Login.html">Entrar</a>
+            </li>
+
+            <li>
+                <input id="pes" type="text" class="search-txt" placeholder="Pesquisar">
+            </li>
+
+            <li>
+                <button id="but"><a href="https://www.google.com.br/"> Pesquisar </a></button>
+            </div>
+        </ul>
+    </nav>
+
+        <!-- essa é a parte da data de pegar a compra -->
+        <div class="data">
+        <form action="/action_page.php">
+            <label for="birthdaytime"></label>
+            <input class="data1" type="datetime-local" id="birthdaytime" name="birthdaytime">
+          </form>
+        </div>
+          
+
+        <!-- essa é a parte da img, form etc...-->
+
+
+            <div class="paragrafo">
+        <form class="">
+            <h2 class="titulo">Pães </h2> <br>
+            <p class="preco-original" >preço original: R$ 1,99</p>
+            <p class="preco-atual" >promoção <span>R$ 00,99</span></p>
+            <p class="desconto" >você economiza <span>R$ 00,99</span></p> <br>
+        </form>
+    </div>
+
+        <!-- essa é a parte do formilario de quantidade -->
+         <div class="form-quant">
+            <label for="quantity">Quantidade =</label>
+            <input class="formulario" type="number" id="quantity" name="quantity" min="1" max="20" >
+         </div>
+
+         <!-- javascript para o evento do botao-->
+             <script type="text/javascript">
+             function Comprar(){
+                 window.location.href= "pagamento.html" ;
+             }
+            </script>
+
+         <input class="bnt-Comprar" type="button" value="Comprar" onclick="Comprar ()" />
+     
+
+        <img class="img-pao" src="Imagens/imagem produto/pngwing.com.png" alt="paes" >
+     
+
+</body>
+</html>
